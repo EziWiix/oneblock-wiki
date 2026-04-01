@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-crown"></i>
+            <h1>Grades</h1>
+        </div>
+        <p class="page-subtitle">Découvrez les différents grades disponibles sur Arkanis et leurs avantages exclusifs.</p>
+
+        <div class="grade-card joueur">
+            <div class="grade-name">Joueur</div>
+            <div class="grade-price">Gratuit</div>
+            <ul class="grade-perks">
+                <li>Accès au mode OneBlock</li>
+                <li>1 home disponible</li>
+                <li>Accès au chat global</li>
+                <li>Commandes de base (/spawn, /tpa, /msg)</li>
+                <li>Accès à l'hôtel des ventes</li>
+                <li>1 slot de métier</li>
+            </ul>
+        </div>
+
+        <div class="grade-card vip">
+            <div class="grade-name">VIP</div>
+            <div class="grade-price">4.99€</div>
+            <ul class="grade-perks">
+                <li>Tous les avantages Joueur</li>
+                <li>3 homes disponibles</li>
+                <li>Kit VIP hebdomadaire (armure fer + outils)</li>
+                <li>Accès à /craft (table de craft portable)</li>
+                <li>Préfixe [VIP] en jeu</li>
+                <li>2 slots de métier</li>
+                <li>Accès aux enchères prioritaires</li>
+                <li>5 ventes simultanées sur l'hôtel des ventes</li>
+            </ul>
+        </div>
+
+        <div class="grade-card vip-plus">
+            <div class="grade-name">VIP+</div>
+            <div class="grade-price">9.99€</div>
+            <ul class="grade-perks">
+                <li>Tous les avantages VIP</li>
+                <li>5 homes disponibles</li>
+                <li>Accès au /fly sur son île</li>
+                <li>Kit VIP+ hebdomadaire (armure diamant + outils)</li>
+                <li>Accès à /ec (enderchest portable)</li>
+                <li>Accès à /back (retour au dernier emplacement)</li>
+                <li>Préfixe [VIP+] en jeu</li>
+                <li>3 slots de métier</li>
+                <li>10 ventes simultanées sur l'hôtel des ventes</li>
+            </ul>
+        </div>
+
+        <div class="grade-card mvp">
+            <div class="grade-name">MVP</div>
+            <div class="grade-price">19.99€</div>
+            <ul class="grade-perks">
+                <li>Tous les avantages VIP+</li>
+                <li>10 homes disponibles</li>
+                <li>Kit MVP hebdomadaire (armure diamant enchantée)</li>
+                <li>Accès aux particules personnalisées (/particles)</li>
+                <li>Accès à /nick (changer son pseudo affiché)</li>
+                <li>Accès à /hat (mettre un bloc sur sa tête)</li>
+                <li>Préfixe [MVP] en jeu</li>
+                <li>4 slots de métier</li>
+                <li>20 ventes simultanées sur l'hôtel des ventes</li>
+                <li>Bonus XP métiers +10%</li>
+            </ul>
+        </div>
+
+        <div class="grade-card mvp-plus">
+            <div class="grade-name">MVP+</div>
+            <div class="grade-price">34.99€</div>
+            <ul class="grade-perks">
+                <li>Tous les avantages MVP</li>
+                <li>15 homes disponibles</li>
+                <li>Kit MVP+ hebdomadaire (armure netherite)</li>
+                <li>Accès aux pets cosmétiques (/pets)</li>
+                <li>Accès aux trails de marche (/trails)</li>
+                <li>Accès à /fly partout (pas seulement l'île)</li>
+                <li>Accès à /feed (restaurer sa faim)</li>
+                <li>Préfixe [MVP+] en jeu</li>
+                <li>5 slots de métier</li>
+                <li>30 ventes simultanées sur l'hôtel des ventes</li>
+                <li>Bonus XP métiers +25%</li>
+                <li>Accès prioritaire en cas de serveur plein</li>
+            </ul>
+        </div>
+
+        <div class="grade-card legende">
+            <div class="grade-name">Légende</div>
+            <div class="grade-price">59.99€</div>
+            <ul class="grade-perks">
+                <li>Tous les avantages MVP+</li>
+                <li>25 homes disponibles</li>
+                <li>Kit Légende hebdomadaire (netherite enchantée max)</li>
+                <li>Accès à /heal (restaurer sa vie)</li>
+                <li>Accès à /glow (effet lumineux coloré)</li>
+                <li>Couleurs dans le chat et les panneaux</li>
+                <li>Titre exclusif personnalisable</li>
+                <li>Taille d'île agrandie (+50 blocs)</li>
+                <li>Préfixe [Légende] animé en jeu</li>
+                <li>Slots de métier illimités</li>
+                <li>50 ventes simultanées sur l'hôtel des ventes</li>
+                <li>Bonus XP métiers +50%</li>
+                <li>Accès anticipé aux nouvelles mises à jour</li>
+                <li>Rôle exclusif sur le Discord</li>
+            </ul>
+        </div>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

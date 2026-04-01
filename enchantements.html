@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchantements | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link active"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-magic"></i>
+            <h1>Enchantements Custom</h1>
+        </div>
+        <p class="page-subtitle">Découvre les enchantements exclusifs disponibles sur Arkanis</p>
+
+        <div class="info-box tip">
+            <div class="info-box-title"><i class="fas fa-book"></i> Comment ça marche ?</div>
+            <p>Les enchantements custom s'obtiennent via la <strong>table d'enchantement custom</strong> accessible avec <span class="cmd">/enchant</span> ou en drops dans les <strong>crates</strong>. Chaque enchantement possède une rareté qui détermine sa probabilité d'apparition. Les livres d'enchantement peuvent être appliqués sur l'enclume comme des enchantements vanilla.</p>
+        </div>
+
+        <h2>Liste des enchantements</h2>
+
+        <table class="ench-table">
+            <thead>
+                <tr>
+                    <th>Enchantement</th>
+                    <th>Rareté</th>
+                    <th>Max</th>
+                    <th>Description</th>
+                    <th>Applicable sur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="ench-name">Replantation</span></td>
+                    <td><span class="ench-rarity common">Commun</span></td>
+                    <td>I</td>
+                    <td>Replante automatiquement les cultures récoltées</td>
+                    <td>Houe</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Nightvision</span></td>
+                    <td><span class="ench-rarity common">Commun</span></td>
+                    <td>I</td>
+                    <td>Donne l'effet Vision Nocturne en permanence</td>
+                    <td>Casque</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Speed</span></td>
+                    <td><span class="ench-rarity common">Commun</span></td>
+                    <td>III</td>
+                    <td>Augmente la vitesse de déplacement</td>
+                    <td>Bottes</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Haste</span></td>
+                    <td><span class="ench-rarity common">Commun</span></td>
+                    <td>II</td>
+                    <td>Donne l'effet Célérité en permanence</td>
+                    <td>Pioche, Hache</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Telekinesis</span></td>
+                    <td><span class="ench-rarity rare">Rare</span></td>
+                    <td>I</td>
+                    <td>Envoie les drops directement dans l'inventaire</td>
+                    <td>Outils, Armes</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Auto-Smelt</span></td>
+                    <td><span class="ench-rarity rare">Rare</span></td>
+                    <td>I</td>
+                    <td>Fait fondre automatiquement les blocs minés</td>
+                    <td>Pioche</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Experience Boost</span></td>
+                    <td><span class="ench-rarity rare">Rare</span></td>
+                    <td>III</td>
+                    <td>Multiplie l'XP reçue par 1.5x / 2x / 3x</td>
+                    <td>Outils, Armes</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Veinminer</span></td>
+                    <td><span class="ench-rarity rare">Rare</span></td>
+                    <td>I</td>
+                    <td>Mine un filon entier en un seul coup</td>
+                    <td>Pioche</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Lightning</span></td>
+                    <td><span class="ench-rarity epic">Épique</span></td>
+                    <td>III</td>
+                    <td>Chance d'invoquer un éclair sur l'ennemi frappé</td>
+                    <td>Épée</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Explosive</span></td>
+                    <td><span class="ench-rarity epic">Épique</span></td>
+                    <td>III</td>
+                    <td>Crée une petite explosion lors du minage (3x3, 5x5, 7x7)</td>
+                    <td>Pioche</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Life Steal</span></td>
+                    <td><span class="ench-rarity epic">Épique</span></td>
+                    <td>III</td>
+                    <td>Vole des points de vie à chaque coup (5% / 10% / 15%)</td>
+                    <td>Épée, Hache</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Ice Aspect</span></td>
+                    <td><span class="ench-rarity epic">Épique</span></td>
+                    <td>II</td>
+                    <td>Ralentit et gèle l'ennemi touché</td>
+                    <td>Épée</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Soul Bound</span></td>
+                    <td><span class="ench-rarity legendary">Légendaire</span></td>
+                    <td>I</td>
+                    <td>L'objet est conservé après la mort</td>
+                    <td>Tout</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Fly</span></td>
+                    <td><span class="ench-rarity legendary">Légendaire</span></td>
+                    <td>I</td>
+                    <td>Permet de voler tant que l'armure est équipée</td>
+                    <td>Plastron</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Laser</span></td>
+                    <td><span class="ench-rarity legendary">Légendaire</span></td>
+                    <td>V</td>
+                    <td>Tire un rayon infligeant des dégâts à distance</td>
+                    <td>Épée</td>
+                </tr>
+                <tr>
+                    <td><span class="ench-name">Thunderlord</span></td>
+                    <td><span class="ench-rarity legendary">Légendaire</span></td>
+                    <td>III</td>
+                    <td>Après 3 coups sur le même ennemi, déclenche une tempête de foudre</td>
+                    <td>Épée, Hache</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Niveaux de rareté</h2>
+        <div class="info-box">
+            <p><span class="ench-rarity common">Commun</span> — Facile à obtenir, coût faible en XP</p>
+            <p><span class="ench-rarity rare">Rare</span> — Probabilité moyenne, coût modéré</p>
+            <p><span class="ench-rarity epic">Épique</span> — Difficile à trouver, nécessite beaucoup d'XP</p>
+            <p><span class="ench-rarity legendary">Légendaire</span> — Extrêmement rare, uniquement via crates ou événements</p>
+        </div>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règles | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link active"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-gavel"></i>
+            <h1>Règles du serveur</h1>
+        </div>
+        <p class="page-subtitle">Lis attentivement les règles avant de jouer sur Arkanis</p>
+
+        <div class="info-box danger">
+            <div class="info-box-title"><i class="fas fa-exclamation-triangle"></i> Attention</div>
+            <p>Le non-respect des règles entraîne des <strong>sanctions</strong> pouvant aller de l'avertissement au bannissement définitif. L'ignorance des règles ne constitue pas une excuse. En jouant sur Arkanis, tu acceptes l'ensemble de ces règles.</p>
+        </div>
+
+        <h2>Règles générales</h2>
+
+        <div class="rule-item">
+            <div class="rule-number">#1</div>
+            <div>
+                <strong>Respect des joueurs</strong>
+                <p>Les insultes, le harcèlement, la discrimination et tout comportement toxique sont strictement interdits. Sois courtois et bienveillant envers les autres joueurs, quel que soit leur grade ou leur ancienneté.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#2</div>
+            <div>
+                <strong>Pas de triche / hack</strong>
+                <p>L'utilisation de clients modifiés (hacked clients), de macros, d'autoclickers ou de tout logiciel donnant un avantage déloyal est interdite. Les mods autorisés sont : OptiFine, Sodium, Litematica (mode affichage uniquement), et les minimaps sans radar d'entités.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#3</div>
+            <div>
+                <strong>Pas de grief</strong>
+                <p>Il est interdit de détruire, modifier ou voler les constructions et items d'autres joueurs sans leur permission. Cela inclut le placement de blocs indésirables, le vol via hoppers, et le piégeage de claims.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#4</div>
+            <div>
+                <strong>Pas de spam</strong>
+                <p>Le spam dans le chat (messages répétitifs, flood de caractères, abus de majuscules) est interdit. Évite également le spam de commandes et les messages inutiles répétés.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#5</div>
+            <div>
+                <strong>Pas de publicité</strong>
+                <p>La publicité pour d'autres serveurs Minecraft, des liens Discord externes ou tout contenu promotionnel est interdite dans le chat, les panneaux et les livres.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#6</div>
+            <div>
+                <strong>Pas d'arnaque</strong>
+                <p>Toute forme d'arnaque dans les échanges entre joueurs est interdite. Les accords doivent être respectés. L'utilisation de techniques trompeuses pour soutirer des items ou de l'argent est sanctionnée.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#7</div>
+            <div>
+                <strong>Skin et pseudo appropriés</strong>
+                <p>Les skins et pseudos à caractère offensant, discriminatoire, sexuel ou faisant référence à des contenus inappropriés sont interdits. Le staff se réserve le droit de demander un changement.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#8</div>
+            <div>
+                <strong>Pas de duplication</strong>
+                <p>L'exploitation de bugs, glitchs ou failles pour dupliquer des items, de l'argent ou obtenir un avantage injuste est strictement interdite. Tout bug découvert doit être signalé au staff.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#9</div>
+            <div>
+                <strong>Respect du staff</strong>
+                <p>Les décisions du staff sont finales. Contester publiquement une sanction, mentir au staff ou tenter de contourner une punition aggravera ta sanction. Pour contester, utilise le Discord.</p>
+            </div>
+        </div>
+
+        <div class="rule-item">
+            <div class="rule-number">#10</div>
+            <div>
+                <strong>Amusez-vous !</strong>
+                <p>Arkanis est avant tout un serveur fait pour s'amuser. Profite de l'expérience, aide les nouveaux joueurs et contribue à une communauté positive. Le fair-play et la bonne humeur sont toujours récompensés !</p>
+            </div>
+        </div>
+
+        <h2>Sanctions</h2>
+
+        <div class="info-box warning">
+            <div class="info-box-title"><i class="fas fa-balance-scale"></i> Échelle des sanctions</div>
+            <p>Les sanctions sont appliquées de manière progressive selon la gravité et la récidive :</p>
+        </div>
+
+        <table class="cmd-table">
+            <thead>
+                <tr>
+                    <th>Sanction</th>
+                    <th>Description</th>
+                    <th>Exemples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong style="color: var(--mc-yellow);">Avertissement</strong></td>
+                    <td>Rappel à l'ordre verbal ou écrit</td>
+                    <td>Première infraction mineure, spam léger</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-gold);">Mute</strong></td>
+                    <td>Impossibilité d'écrire dans le chat (15min - 24h)</td>
+                    <td>Spam répété, insultes légères, pub</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-red);">Kick</strong></td>
+                    <td>Expulsion immédiate du serveur</td>
+                    <td>Comportement perturbateur, provocation</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-dark-red);">Ban temporaire</strong></td>
+                    <td>Bannissement de 1 jour à 30 jours</td>
+                    <td>Grief, arnaque, récidive multiple</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-dark-red);">Ban définitif</strong></td>
+                    <td>Bannissement permanent du serveur</td>
+                    <td>Hack, duplication, comportement grave</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

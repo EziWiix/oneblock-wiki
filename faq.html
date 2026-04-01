@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link active"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-question-circle"></i>
+            <h1>FAQ</h1>
+        </div>
+        <p class="page-subtitle">Questions fréquemment posées</p>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment rejoindre le serveur ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Lance Minecraft en version <strong>1.21.x</strong> (Java Edition), puis ajoute le serveur avec l'adresse <span class="cmd">play.arkanis.fr</span>. Aucun mod n'est requis pour rejoindre. Tu peux aussi utiliser la version Bedrock via Geyser sur le même port.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment créer son île OneBlock ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Dès ta connexion, utilise la commande <span class="cmd">/ob create</span> pour créer ton île OneBlock. Tu seras téléporté sur un bloc unique que tu pourras casser à l'infini pour obtenir des ressources. Au fil de ta progression, de nouvelles phases se débloqueront avec des blocs et des mobs plus rares.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment gagner de l'argent ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Plusieurs méthodes existent pour gagner de l'argent :</p>
+                <p>- <strong>Métiers</strong> : Rejoins jusqu'à 3 métiers avec <span class="cmd">/jobs join</span> et gagne de l'argent en jouant normalement.</p>
+                <p>- <strong>Shop</strong> : Vends tes ressources au shop serveur avec <span class="cmd">/shop</span>.</p>
+                <p>- <strong>Hôtel des ventes</strong> : Mets en vente des items aux autres joueurs avec <span class="cmd">/ah sell [prix]</span>.</p>
+                <p>- <strong>Votes</strong> : Vote quotidiennement pour recevoir des récompenses en argent.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment voter pour le serveur ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Utilise la commande <span class="cmd">/vote</span> en jeu pour obtenir les liens de vote. Tu peux voter sur 3 sites différents toutes les 24 heures. Chaque vote te donne une clé de vote, de l'argent et de l'XP. Consulte la page <a href="votes.html">Votes</a> pour plus de détails.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment inviter un ami sur mon île ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Utilise la commande <span class="cmd">/ob team invite [pseudo]</span> pour inviter un joueur sur ton île. Il pourra accepter avec <span class="cmd">/ob team accept</span>. Tu peux gérer les permissions de tes membres avec <span class="cmd">/ob team</span>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment protéger mon île ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Ton île est automatiquement protégée. Seuls les membres de ton équipe peuvent interagir avec les blocs. Tu peux ajuster les paramètres de visite avec <span class="cmd">/ob settings</span> et bannir des joueurs de ton île avec <span class="cmd">/ob ban [pseudo]</span>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment fonctionne l'hôtel des ventes ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>L'hôtel des ventes (AH) permet de vendre et acheter des items entre joueurs :</p>
+                <p>- <span class="cmd">/ah</span> : Ouvre l'hôtel des ventes</p>
+                <p>- <span class="cmd">/ah sell [prix]</span> : Met en vente l'item que tu tiens en main</p>
+                <p>- <span class="cmd">/ah expired</span> : Récupère tes items expirés</p>
+                <p>Les ventes expirent après <strong>48 heures</strong> si elles ne sont pas achetées.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment obtenir un grade ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Les grades sont disponibles sur la <strong>boutique officielle</strong> du serveur. Utilise <span class="cmd">/boutique</span> en jeu pour obtenir le lien. Chaque grade offre des avantages exclusifs comme des homes supplémentaires, du fly, et des commandes spéciales. Consulte la page <a href="grades.html">Grades</a> pour voir tous les avantages.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">J'ai perdu mes items, que faire ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Si tu as perdu tes items à cause d'un bug, ouvre un ticket sur le <strong>Discord</strong> avec la commande <span class="cmd">/ticket</span> ou via le salon dédié. Fournis des preuves (screenshots, description détaillée) pour que le staff puisse t'aider. Les pertes liées à un manque de prudence (mort en lave, PvP) ne sont pas remboursées.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment signaler un joueur ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Utilise la commande <span class="cmd">/report [pseudo] [raison]</span> en jeu ou ouvre un ticket sur le Discord. Pour les cas de triche, fournis une vidéo ou des screenshots si possible. Le staff examinera le signalement dans les plus brefs délais.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Comment rejoindre le Discord ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Utilise la commande <span class="cmd">/discord</span> en jeu pour obtenir le lien d'invitation. Sur le Discord, tu peux lier ton compte Minecraft avec <span class="cmd">/link</span> pour accéder à des salons exclusifs et recevoir des notifications de votes.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Le serveur est en quelle version ? <i class="fas fa-chevron-down"></i></div>
+            <div class="faq-answer">
+                <p>Le serveur tourne en <strong>1.21.x</strong> (dernière version stable). Nous supportons les connexions de la <strong>1.20.x</strong> à la <strong>1.21.x</strong> grâce à ViaVersion. La version Bedrock est aussi supportée via Geyser.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

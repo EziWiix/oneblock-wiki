@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métiers | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link active"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-hammer"></i>
+            <h1>Métiers</h1>
+        </div>
+        <p class="page-subtitle">Gagne de l'argent en travaillant</p>
+
+        <div class="info-box tip">
+            <div class="info-box-title"><i class="fas fa-info-circle"></i> Comment fonctionnent les métiers ?</div>
+            <p>Les métiers te permettent de gagner de l'<strong>argent</strong> et de l'<strong>XP</strong> en réalisant des actions en jeu. Tu peux rejoindre jusqu'à <strong>3 métiers</strong> simultanément. Plus tu montes en niveau dans un métier, plus tes gains augmentent. Utilise <span class="cmd">/jobs join [métier]</span> pour commencer et <span class="cmd">/jobs leave [métier]</span> pour quitter un métier.</p>
+        </div>
+
+        <h2>Liste des métiers</h2>
+
+        <div class="job-card">
+            <h3><i class="fas fa-gem"></i> Mineur</h3>
+            <p>Gagne de l'argent en minant des minerais et de la pierre. Idéal pour les joueurs qui passent du temps dans les mines.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 2$ - 15$ / bloc</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 1 - 8 XP / bloc</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-tree"></i> Bûcheron</h3>
+            <p>Coupe des arbres et récolte du bois pour gagner de l'argent. Les bois rares rapportent plus.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 1.5$ - 10$ / bloc</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 1 - 5 XP / bloc</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-seedling"></i> Fermier</h3>
+            <p>Plante et récolte des cultures pour gagner ta vie. Les cultures rares comme les verrues du Nether rapportent davantage.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 1$ - 8$ / récolte</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 1 - 4 XP / récolte</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-fish"></i> Pêcheur</h3>
+            <p>Lance ta canne et attrape des poissons. Les poissons tropicaux et les trésors valent cher !</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 3$ - 25$ / prise</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 2 - 10 XP / prise</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-skull-crossbones"></i> Chasseur</h3>
+            <p>Tue des mobs hostiles et passifs pour de l'argent. Les boss et mobs spéciaux donnent des bonus.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 2$ - 50$ / kill</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 2 - 15 XP / kill</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-hat-wizard"></i> Enchanteur</h3>
+            <p>Enchante des objets et brasse des potions pour gagner de l'argent. Les enchantements de haut niveau rapportent plus.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 5$ - 40$ / enchant</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 3 - 12 XP / enchant</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-hard-hat"></i> Constructeur</h3>
+            <p>Place des blocs et construis des structures. Tous les types de blocs comptent, les blocs décoratifs rapportent un bonus.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 0.5$ - 5$ / bloc</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 0.5 - 3 XP / bloc</div>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h3><i class="fas fa-utensils"></i> Cuisinier</h3>
+            <p>Prépare des plats et fais cuire de la nourriture. Les recettes complexes donnent les meilleures récompenses.</p>
+            <div class="job-rewards">
+                <div class="job-reward"><i class="fas fa-coins"></i> 2$ - 20$ / craft</div>
+                <div class="job-reward"><i class="fas fa-star"></i> 1 - 8 XP / craft</div>
+            </div>
+        </div>
+
+        <h2>Commandes des métiers</h2>
+
+        <table class="cmd-table">
+            <thead>
+                <tr>
+                    <th>Commande</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="cmd">/jobs</span></td>
+                    <td>Ouvre le menu principal des métiers</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs join [métier]</span></td>
+                    <td>Rejoindre un métier (max 3)</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs leave [métier]</span></td>
+                    <td>Quitter un métier</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs stats</span></td>
+                    <td>Voir tes statistiques et niveaux</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs info [métier]</span></td>
+                    <td>Informations détaillées sur un métier</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs top [métier]</span></td>
+                    <td>Classement des meilleurs joueurs</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/jobs browse</span></td>
+                    <td>Parcourir tous les métiers disponibles</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

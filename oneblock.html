@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneBlock | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-cube"></i>
+            <h1>OneBlock</h1>
+        </div>
+        <p class="page-subtitle">Guide complet du mode OneBlock</p>
+
+        <div class="info-box tip">
+            Le mode <strong>OneBlock</strong> est un mode de jeu unique dans lequel vous commencez sur un seul bloc flottant dans le vide. En cassant ce bloc, il se regenere indefiniment en generant des blocs, des coffres et parfois des mobs. Votre objectif : progresser a travers les phases pour debloquer de nouvelles ressources et construire votre ile !
+        </div>
+
+        <h2>Comment jouer ?</h2>
+
+        <div class="info-box">
+            <p><strong>1.</strong> Connectez-vous au serveur et tapez <span class="cmd">/ob create</span> pour creer votre ile OneBlock.</p>
+            <p><strong>2.</strong> Cassez le bloc central : il se regenerera automatiquement avec un nouveau bloc a chaque fois.</p>
+            <p><strong>3.</strong> Recuperez les ressources et commencez a construire votre ile autour du bloc central.</p>
+            <p><strong>4.</strong> Des coffres apparaitront regulierement avec du butin utile pour votre progression.</p>
+            <p><strong>5.</strong> Des mobs (passifs et hostiles) spawneront selon la phase dans laquelle vous vous trouvez.</p>
+            <p><strong>6.</strong> Progressez a travers les 10 phases pour debloquer des ressources de plus en plus rares.</p>
+            <p><strong>7.</strong> Utilisez <span class="cmd">/ob level</span> pour voir votre progression et <span class="cmd">/ob phases</span> pour consulter les phases.</p>
+        </div>
+
+        <h2>Les Phases</h2>
+
+        <div class="phase-card">
+            <div class="phase-number">1</div>
+            <div class="phase-info">
+                <h3>Plains</h3>
+                <p>La phase de depart. Vous obtenez des ressources basiques pour commencer votre aventure. Des animaux passifs apparaissent pour vous fournir de la nourriture.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Terre</span>
+                    <span class="block-tag">Herbe</span>
+                    <span class="block-tag">Chene</span>
+                    <span class="block-tag">Bouleau</span>
+                    <span class="block-tag">Gravier</span>
+                    <span class="block-tag">Fleurs</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">2</div>
+            <div class="phase-info">
+                <h3>Underground</h3>
+                <p>Explorez les profondeurs ! Les minerais commencent a apparaitre, vous permettant de crafter vos premiers outils en fer et de vous equiper pour la suite.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Pierre</span>
+                    <span class="block-tag">Charbon</span>
+                    <span class="block-tag">Fer</span>
+                    <span class="block-tag">Cuivre</span>
+                    <span class="block-tag">Granite</span>
+                    <span class="block-tag">Andésite</span>
+                    <span class="block-tag">Diorite</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">3</div>
+            <div class="phase-info">
+                <h3>Winter</h3>
+                <p>Le froid s'installe. Des blocs de neige et de glace apparaissent, accompagnes de mobs comme les ours polaires et les renards. Attention aux strays !</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Neige</span>
+                    <span class="block-tag">Glace</span>
+                    <span class="block-tag">Glace compactée</span>
+                    <span class="block-tag">Sapin</span>
+                    <span class="block-tag">Poudreuse</span>
+                    <span class="block-tag">Terre enneigée</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">4</div>
+            <div class="phase-info">
+                <h3>Ocean</h3>
+                <p>Plongez dans les profondeurs marines. L'eau, le sable et la prismarine apparaissent. Des gardiens et des noyés peuvent spawner, restez sur vos gardes.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Eau</span>
+                    <span class="block-tag">Sable</span>
+                    <span class="block-tag">Argile</span>
+                    <span class="block-tag">Prismarine</span>
+                    <span class="block-tag">Corail</span>
+                    <span class="block-tag">Gravier</span>
+                    <span class="block-tag">Kelp</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">5</div>
+            <div class="phase-info">
+                <h3>Jungle</h3>
+                <p>La vegetation tropicale envahit votre ile. Les bois de jungle, le cacao et les bambous apparaissent. Vous pourrez croiser des perroquets et des ocelots.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Bois de jungle</span>
+                    <span class="block-tag">Feves de cacao</span>
+                    <span class="block-tag">Bambou</span>
+                    <span class="block-tag">Lianes</span>
+                    <span class="block-tag">Melon</span>
+                    <span class="block-tag">Mousse</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">6</div>
+            <div class="phase-info">
+                <h3>Nether</h3>
+                <p>Les flammes de l'enfer ! Accedez aux ressources du Nether sans avoir a construire de portail. Des blazes et des piglins peuvent apparaitre.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Netherrack</span>
+                    <span class="block-tag">Quartz</span>
+                    <span class="block-tag">Briques du Nether</span>
+                    <span class="block-tag">Ame de sable</span>
+                    <span class="block-tag">Basalte</span>
+                    <span class="block-tag">Blackstone</span>
+                    <span class="block-tag">Or du Nether</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">7</div>
+            <div class="phase-info">
+                <h3>Desert</h3>
+                <p>Le sable brulant recouvre votre bloc. Des husks et des lapins du desert apparaissent. Vous trouverez des materiaux de construction uniques.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Sable</span>
+                    <span class="block-tag">Grès</span>
+                    <span class="block-tag">Grès rouge</span>
+                    <span class="block-tag">Cactus</span>
+                    <span class="block-tag">Terre cuite</span>
+                    <span class="block-tag">Sable rouge</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">8</div>
+            <div class="phase-info">
+                <h3>End</h3>
+                <p>Les blocs de l'End arrivent sur votre ile. Des endermen spawneront frequemment. L'obsidienne et les end stones sont des ressources precieuses a cette etape.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">End stone</span>
+                    <span class="block-tag">Obsidienne</span>
+                    <span class="block-tag">Purpur</span>
+                    <span class="block-tag">Brique de l'End</span>
+                    <span class="block-tag">Chorus</span>
+                    <span class="block-tag">Obsidienne pleurante</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">9</div>
+            <div class="phase-info">
+                <h3>Celestial</h3>
+                <p>Les ressources rares commencent a apparaitre en abondance. C'est le moment de crafter votre equipement en diamant et d'accumuler des emeraudes pour le commerce.</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Diamant</span>
+                    <span class="block-tag">Emeraude</span>
+                    <span class="block-tag">Lapis-lazuli</span>
+                    <span class="block-tag">Redstone</span>
+                    <span class="block-tag">Or</span>
+                    <span class="block-tag">Amethyste</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="phase-card">
+            <div class="phase-number">10</div>
+            <div class="phase-info">
+                <h3>Master</h3>
+                <p>La phase ultime. Tous les blocs du jeu peuvent apparaitre, y compris les debris antiques pour le netherite. Vous avez atteint le sommet de la progression !</p>
+                <div class="phase-blocks">
+                    <span class="block-tag">Debris antiques</span>
+                    <span class="block-tag">Netherite</span>
+                    <span class="block-tag">Diamant</span>
+                    <span class="block-tag">Emeraude</span>
+                    <span class="block-tag">Tous les blocs</span>
+                    <span class="block-tag">Coffres rares</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Astuces</h2>
+
+        <div class="info-box tip">
+            <strong>Ne sautez pas dans le vide !</strong> Placez toujours des blocs autour de vous pour agrandir votre plateforme. Perdre vos items dans le vide serait catastrophique en debut de partie.
+        </div>
+
+        <div class="info-box tip">
+            <strong>Gardez vos premiers bois.</strong> Le bois est essentiel pour crafter des outils et une table de craft. Ne le gaspillez pas en construction tant que vous n'en avez pas suffisamment.
+        </div>
+
+        <div class="info-box tip">
+            <strong>Creez un cobblestone generator.</strong> Des que vous obtenez de la lave et de l'eau, fabriquez un generateur de cobblestone pour avoir des blocs de construction illimites.
+        </div>
+
+        <div class="info-box tip">
+            <strong>Invitez des amis !</strong> Utilisez <span class="cmd">/ob invite &lt;pseudo&gt;</span> pour jouer en coop. A plusieurs, la progression est bien plus rapide et agreable.
+        </div>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

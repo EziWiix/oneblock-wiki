@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link active"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Content -->
+    <main class="wiki-content">
+
+        <div class="wiki-hero">
+            <h1>ARKANIS</h1>
+            <div class="server-ip" data-copy-ip="play.arkanis.fr">play.arkanis.fr</div>
+            <p class="hero-description">Serveur Minecraft OneBlock - Rejoins l'aventure !</p>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <i class="fas fa-gamepad"></i>
+                <span>Version 1.21+</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-cube"></i>
+                <span>OneBlock</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-users"></i>
+                <span>Joueurs en ligne</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Events réguliers</span>
+            </div>
+        </div>
+
+        <h2>Explorer le wiki</h2>
+
+        <div class="cards-grid">
+            <a href="commandes.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Commandes</h3>
+                <p>Toutes les commandes disponibles en jeu, classées par catégorie.</p>
+            </a>
+            <a href="grades.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-crown"></i></div>
+                <h3>Grades</h3>
+                <p>Découvre les grades joueur et VIP ainsi que leurs avantages exclusifs.</p>
+            </a>
+            <a href="oneblock.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-cube"></i></div>
+                <h3>OneBlock</h3>
+                <p>Le fonctionnement du OneBlock, les phases et les récompenses.</p>
+            </a>
+            <a href="enchantements.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-magic"></i></div>
+                <h3>Enchantements</h3>
+                <p>Les enchantements custom disponibles et comment les obtenir.</p>
+            </a>
+            <a href="metiers.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-hammer"></i></div>
+                <h3>Métiers</h3>
+                <p>Choisis un métier et gagne de l'argent en récoltant des ressources.</p>
+            </a>
+            <a href="votes.html" class="wiki-card">
+                <div class="wiki-card-icon"><i class="fas fa-star"></i></div>
+                <h3>Votes</h3>
+                <p>Vote pour le serveur et obtiens des récompenses quotidiennes.</p>
+            </a>
+        </div>
+
+        <h2>Caractéristiques</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-cube"></i>
+                <h3>OneBlock</h3>
+                <p>Un bloc infini qui génère des ressources. Casse-le pour progresser à travers 15 phases uniques.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-magic"></i>
+                <h3>Enchantements custom</h3>
+                <p>Plus de 30 enchantements exclusifs pour rendre ton équipement encore plus puissant.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hammer"></i>
+                <h3>Métiers</h3>
+                <p>Mineur, Fermier, Chasseur, Pêcheur... Choisis ta spécialité et monte en niveau.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-crown"></i>
+                <h3>Grades</h3>
+                <p>Des grades gratuits à débloquer en jouant et des grades VIP avec des avantages exclusifs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-coins"></i>
+                <h3>Économie</h3>
+                <p>Un système économique complet avec shop, hôtel des ventes et échanges entre joueurs.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-skull-crossbones"></i>
+                <h3>PvP</h3>
+                <p>Affronte d'autres joueurs dans l'arène PvP et grimpe dans le classement.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Events</h3>
+                <p>Des événements réguliers avec des récompenses exclusives : farming, quiz, mini-jeux et plus.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>Communauté</h3>
+                <p>Rejoins une communauté active sur Discord, participe aux votes et aux discussions.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="wiki-footer">
+        <p>&copy; 2026 Arkanis — Wiki non officiel</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

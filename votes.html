@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votes | Wiki Arkanis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="wiki-header">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon"><i class="fas fa-cube"></i></div>
+            <span>Arkanis Wiki</span>
+        </a>
+        <div class="header-right">
+            <div class="header-ip" data-copy-ip="play.arkanis.fr">
+                <span class="copy-tooltip">Copié !</span>
+                play.arkanis.fr
+            </div>
+            <button class="hamburger-wiki" id="hamburgerWiki"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="wiki-sidebar" id="wikiSidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-title">Navigation</div>
+            <a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="commandes.html" class="sidebar-link"><i class="fas fa-terminal"></i> Commandes</a>
+            <a href="grades.html" class="sidebar-link"><i class="fas fa-crown"></i> Grades</a>
+            <a href="oneblock.html" class="sidebar-link"><i class="fas fa-cube"></i> OneBlock</a>
+            <a href="enchantements.html" class="sidebar-link"><i class="fas fa-magic"></i> Enchantements</a>
+            <a href="metiers.html" class="sidebar-link"><i class="fas fa-hammer"></i> Métiers</a>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-title">Communauté</div>
+            <a href="regles.html" class="sidebar-link"><i class="fas fa-gavel"></i> Règles</a>
+            <a href="faq.html" class="sidebar-link"><i class="fas fa-question-circle"></i> FAQ</a>
+            <a href="votes.html" class="sidebar-link active"><i class="fas fa-star"></i> Votes</a>
+        </div>
+    </nav>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <main class="wiki-content">
+        <div class="page-title">
+            <i class="fas fa-star"></i>
+            <h1>Voter</h1>
+        </div>
+        <p class="page-subtitle">Soutiens le serveur et gagne des récompenses</p>
+
+        <div class="info-box tip">
+            <div class="info-box-title"><i class="fas fa-gift"></i> Pourquoi voter ?</div>
+            <p>Voter permet au serveur d'être mieux classé sur les sites de référencement Minecraft et d'attirer de nouveaux joueurs. En échange, tu reçois des <strong>récompenses exclusives</strong> à chaque vote ! Tu peux voter sur chaque site <strong>une fois toutes les 24 heures</strong>. Utilise <span class="cmd">/vote</span> en jeu pour accéder aux liens.</p>
+        </div>
+
+        <h2>Sites de vote</h2>
+
+        <div class="vote-card">
+            <div>
+                <h3 style="margin-top: 0; font-family: 'Press Start 2P', monospace; font-size: 0.7rem; color: var(--mc-green);">Serveurs-Minecraft</h3>
+                <p style="margin-bottom: 0; color: var(--mc-text-muted); font-size: 0.85rem;">Le plus grand annuaire de serveurs Minecraft francophones. Vote rapide en un clic.</p>
+            </div>
+            <a href="#" class="vote-btn">Voter <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="vote-card">
+            <div>
+                <h3 style="margin-top: 0; font-family: 'Press Start 2P', monospace; font-size: 0.7rem; color: var(--mc-aqua);">Top-Serveurs</h3>
+                <p style="margin-bottom: 0; color: var(--mc-text-muted); font-size: 0.85rem;">Classement populaire des meilleurs serveurs. Aide Arkanis à monter dans le top !</p>
+            </div>
+            <a href="#" class="vote-btn">Voter <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="vote-card">
+            <div>
+                <h3 style="margin-top: 0; font-family: 'Press Start 2P', monospace; font-size: 0.7rem; color: var(--mc-gold);">Serveur-Privé</h3>
+                <p style="margin-bottom: 0; color: var(--mc-text-muted); font-size: 0.85rem;">Annuaire de serveurs avec classement par votes mensuels. Chaque vote compte !</p>
+            </div>
+            <a href="#" class="vote-btn">Voter <i class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <h2>Récompenses par vote</h2>
+
+        <div class="info-box">
+            <div class="info-box-title"><i class="fas fa-gift"></i> À chaque vote tu reçois :</div>
+            <p><i class="fas fa-key" style="color: var(--mc-gold);"></i> <strong>1 Clé de Vote</strong> — Utilisable au <span class="cmd">/warp crates</span> pour ouvrir la crate de vote</p>
+            <p><i class="fas fa-coins" style="color: var(--mc-green);"></i> <strong>500$</strong> — Argent en jeu ajouté directement à ton solde</p>
+            <p><i class="fas fa-star" style="color: var(--mc-aqua);"></i> <strong>100 XP</strong> — Points d'expérience pour ton niveau global</p>
+        </div>
+
+        <h2>Récompenses de série (Vote Streak)</h2>
+
+        <div class="info-box tip">
+            <div class="info-box-title"><i class="fas fa-fire"></i> Cumule tes votes !</div>
+            <p>Vote chaque jour sans interruption pour débloquer des récompenses bonus. Si tu manques un jour, ta série repart à zéro.</p>
+        </div>
+
+        <table class="cmd-table">
+            <thead>
+                <tr>
+                    <th>Série</th>
+                    <th>Récompense bonus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong style="color: var(--mc-gray);">3 jours</strong></td>
+                    <td><i class="fas fa-key" style="color: var(--mc-gold);"></i> 2 Clés de Vote supplémentaires + 1 000$</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-green);">7 jours</strong></td>
+                    <td><i class="fas fa-key" style="color: var(--mc-aqua);"></i> 1 Clé Rare + 3 000$ + Titre "Voteur"</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-aqua);">14 jours</strong></td>
+                    <td><i class="fas fa-key" style="color: var(--mc-light-purple);"></i> 1 Clé Épique + 7 500$ + 500 XP bonus</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-gold);">30 jours</strong></td>
+                    <td><i class="fas fa-key" style="color: var(--mc-gold);"></i> 1 Clé Légendaire + 20 000$ + Titre "Voteur Légendaire" + Tag exclusif</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-light-purple);">60 jours</strong></td>
+                    <td><i class="fas fa-trophy" style="color: var(--mc-gold);"></i> Kit Voteur Ultime + 50 000$ + Particule exclusive + Titre "Dévoué"</td>
+                </tr>
+                <tr>
+                    <td><strong style="color: var(--mc-red);">90 jours</strong></td>
+                    <td><i class="fas fa-crown" style="color: var(--mc-gold);"></i> 1 Clé Mythique + 100 000$ + Pet exclusif + Titre "Légende du Vote"</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Commandes utiles</h2>
+
+        <table class="cmd-table">
+            <thead>
+                <tr>
+                    <th>Commande</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="cmd">/vote</span></td>
+                    <td>Affiche les liens de vote</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/vote top</span></td>
+                    <td>Classement des meilleurs voteurs du mois</td>
+                </tr>
+                <tr>
+                    <td><span class="cmd">/vote streak</span></td>
+                    <td>Voir ta série de votes actuelle</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="wiki-footer"><p>&copy; 2026 Arkanis — Wiki non officiel</p></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
