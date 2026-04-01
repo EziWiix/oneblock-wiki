@@ -65,6 +65,7 @@
         </div>
 
         <h2>Commandes OneBlock</h2>
+        <p class="page-subtitle">Liste des commandes (page 1/8) — tape <span class="cmd">/ob help 2</span> en jeu pour la suite</p>
         <div class="cmd-table">
             <table>
                 <thead>
@@ -75,28 +76,92 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="cmd">/ob create &lt;nom&gt;</span></td>
-                        <td>Cr&eacute;e une nouvelle &icirc;le OneBlock</td>
+                        <td><span class="cmd">/ob create</span></td>
+                        <td>Cr&eacute;er votre &icirc;le</td>
                     </tr>
                     <tr>
-                        <td><span class="cmd">/ob</span></td>
-                        <td>T&eacute;l&eacute;portation sur ton &icirc;le</td>
+                        <td><span class="cmd">/ob accept [joueur/&icirc;le]</span></td>
+                        <td>Accepter une invitation d'un joueur</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob balance [joueur/&icirc;le]</span></td>
+                        <td>V&eacute;rifier la quantit&eacute; d'argent dans la banque d'une &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob ban &lt;joueur&gt;</span></td>
+                        <td>Bannir un joueur de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob bank [logs]</span></td>
+                        <td>Ouvrir la banque de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob bans</span></td>
+                        <td>Ouvrir le menu des bannissements</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob biome</span></td>
+                        <td>Changer le biome de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob border [couleur]</span></td>
+                        <td>Changer la couleur de la bordure des &icirc;les</td>
                     </tr>
                     <tr>
                         <td><span class="cmd">/ob panel</span></td>
                         <td>Ouvre le panel OneBlock</td>
                     </tr>
                     <tr>
-                        <td><span class="cmd">/ob upgrade</span></td>
-                        <td>Am&eacute;liore le niveau de ton &icirc;le</td>
+                        <td><span class="cmd">/ob help [page]</span></td>
+                        <td>Liste de toutes les commandes</td>
                     </tr>
                     <tr>
                         <td><span class="cmd">/ob invite &lt;joueur&gt;</span></td>
-                        <td>Invite un joueur sur ton &icirc;le</td>
+                        <td>Inviter un joueur &agrave; votre &icirc;le</td>
                     </tr>
                     <tr>
                         <td><span class="cmd">/ob kick &lt;joueur&gt;</span></td>
-                        <td>Expulse un joueur de ton &icirc;le</td>
+                        <td>Expulser un joueur de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob expel &lt;joueur&gt;</span></td>
+                        <td>Expulser un visiteur de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob coop &lt;joueur&gt;</span></td>
+                        <td>Ajouter un joueur en coop&eacute;ration &agrave; votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob coops</span></td>
+                        <td>Ouvrir le menu des coop&eacute;rations</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob chest [page]</span></td>
+                        <td>Ouvrir le coffre de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob close</span></td>
+                        <td>Fermer l'&icirc;le au public</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob counts [joueur/&icirc;le]</span></td>
+                        <td>Voir les comptes de blocs dans votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob delwarp &lt;warp&gt;</span></td>
+                        <td>Supprimer un warp d'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob demote &lt;joueur&gt;</span></td>
+                        <td>R&eacute;trograder un membre dans votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob deposit &lt;montant&gt;</span></td>
+                        <td>D&eacute;poser de l'argent dans la banque de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob disband</span></td>
+                        <td>Dissoudre votre &icirc;le permanence</td>
                     </tr>
                     <tr>
                         <td><span class="cmd">/ob top</span></td>
@@ -115,16 +180,116 @@
                         <td>Visite l'&icirc;le d'un autre joueur</td>
                     </tr>
                     <tr>
-                        <td><span class="cmd">/ob lock</span></td>
-                        <td>Verrouille ton &icirc;le (emp&ecirc;che les visites)</td>
+                        <td><span class="cmd">/ob upgrade</span></td>
+                        <td>Ouvrir le panneau des am&eacute;liorations</td>
                     </tr>
                     <tr>
-                        <td><span class="cmd">/ob biome &lt;biome&gt;</span></td>
-                        <td>Change le biome de ton &icirc;le</td>
+                        <td><span class="cmd">/ob leave</span></td>
+                        <td>Quitter votre &icirc;le</td>
                     </tr>
                     <tr>
-                        <td><span class="cmd">/ob border</span></td>
-                        <td>Affiche les bordures de ton &icirc;le</td>
+                        <td><span class="cmd">/ob missions [cat&eacute;gorie]</span></td>
+                        <td>Ouvrir le menu des missions</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob open</span></td>
+                        <td>Ouvrir l'&icirc;le au public</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob options</span></td>
+                        <td>Options de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob pardon &lt;joueur&gt;</span></td>
+                        <td>D&eacute;bannir un joueur de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob permissions [joueur] [reset]</span></td>
+                        <td>Obtenir toutes les permissions pour un r&ocirc;le d'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob phases</span></td>
+                        <td>Voir les phases</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob promote &lt;joueur&gt;</span></td>
+                        <td>Promouvoir un membre dans votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob rankup &lt;am&eacute;lioration&gt;</span></td>
+                        <td>Augmenter le niveau d'une am&eacute;lioration</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob rate [joueur/&icirc;le]</span></td>
+                        <td>Noter une &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob ratings</span></td>
+                        <td>Afficher toutes les notations d'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob setdiscord &lt;discord&gt;</span></td>
+                        <td>D&eacute;finir le Discord de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob setrole &lt;joueur&gt; &lt;r&ocirc;le&gt;</span></td>
+                        <td>Changer le r&ocirc;le d'un joueur dans votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob setteleport</span></td>
+                        <td>Changer la position de t&eacute;l&eacute;portation de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob setwarp &lt;warp&gt; [cat&eacute;gorie]</span></td>
+                        <td>Cr&eacute;er un nouveau warp d'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob show [joueur/&icirc;le]</span></td>
+                        <td>Obtenir des informations sur une &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob team [joueur/&icirc;le]</span></td>
+                        <td>Informations sur le statut des membres de l'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob teamchat [message]</span></td>
+                        <td>Activer/d&eacute;sactiver le mode de chat d'&eacute;quipe</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob teleport</span></td>
+                        <td>Se t&eacute;l&eacute;porter &agrave; votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob transfer &lt;joueur&gt;</span></td>
+                        <td>Transf&eacute;rer la direction de votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob uncoop &lt;joueur&gt;</span></td>
+                        <td>Retirer un joueur d'&ecirc;tre coop&eacute;rateur dans votre &icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob value [mat&eacute;riau]</span></td>
+                        <td>Obtenir la valeur d'un bloc</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob values [joueur/&icirc;le]</span></td>
+                        <td>Ouvrir le menu des valeurs</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob visitors</span></td>
+                        <td>Ouvrir le menu des visiteurs</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob warp [joueur/&icirc;le] [warp]</span></td>
+                        <td>Se warper &agrave; un warp d'&icirc;le</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob warps</span></td>
+                        <td>Ouvrir le menu des warps</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cmd">/ob withdraw &lt;montant&gt;</span></td>
+                        <td>Retirer de l'argent de la banque de votre &icirc;le</td>
                     </tr>
                 </tbody>
             </table>
