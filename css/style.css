@@ -244,7 +244,16 @@ p { margin-bottom: 12px; }
     margin-top: var(--header-height);
     padding: 32px 40px;
     max-width: 900px;
+    margin-right: auto;
     min-height: calc(100vh - var(--header-height));
+}
+
+@media (min-width: 1400px) {
+    .wiki-content {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: calc(var(--sidebar-width) + 40px);
+    }
 }
 
 /* --- Page Title --- */
@@ -789,6 +798,13 @@ p { margin-bottom: 12px; }
     text-align: center;
     color: var(--mc-text-muted);
     font-size: 0.85rem;
+}
+
+@media (min-width: 1400px) {
+    .wiki-footer {
+        margin-left: 0;
+        padding-left: var(--sidebar-width);
+    }
 }
 
 /* --- Scrollbar --- */
